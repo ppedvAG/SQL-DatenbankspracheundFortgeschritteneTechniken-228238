@@ -86,7 +86,7 @@ WITH RECOMPILE
 */
 
 --löscht gesamten Plancache des Servers:
-dbcc freeproccache 
+dbcc freeproccache
 --Nur im Notfall!!! Nicht zu empfehlen!
 
 
@@ -143,3 +143,9 @@ FROM sys.dm_exec_query_stats [qs]
 CROSS APPLY sys.dm_exec_sql_text([qs].sql_handle) [t]
 CROSS APPLY sys.dm_exec_query_plan([qs].[plan_handle]) [p]
 GO
+
+
+SELECT * FROM INFORMATION_SCHEMA.ROUTINES
+
+SELECT * FROM INFORMATION_SCHEMA.VIEWS
+

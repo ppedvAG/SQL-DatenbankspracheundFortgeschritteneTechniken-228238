@@ -20,41 +20,33 @@ Tag 1:
 - Stored Procedures
 Vor/Nachteile; Parameter Sniffing, Statistics, Plancache
 - "BadQueries"
+- Locking/Blocking/Deadlocks
 
-
-- Partitionierung, Data Compression, (partitionierte/updateable Views)
-
+Tag 2:
+- Query Store
+- sp_Blitz
+- Transactions 101
+- Error Handling: TRY/CATCH, RAISERROR, THROW
+- Views (partitionierte/updateable Views)
 - Parallelism
+- Subqueries & #Tables
+
+- Windowfunctions/Ranking Functions
 
 - Trigger 101, Database & Tables
+
+- Partitionierung, Data Compression, 
 
 - Graph Tables: n:m Beziehungen usw.
 - Geography + Methoden
 
-- Windowfunctions/Ranking Functions
-
 - CTEs
-- Subqueries & #Tables
-
-
-- Query Store
 
 - Programmsteuerung
 WHILE, IF, BREAK, CONTINUE, WAITFOR
-
-- Transactions 101
-- Locking/Blocking/Deadlocks
-
-- Error Handling: TRY/CATCH, RAISERROR, THROW
-
-
-
 
 (- Tuning; open source Procedures)
 
 
 
 */
-
-
-SELECT @@VERSION

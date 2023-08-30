@@ -29,7 +29,7 @@ Ende:
 
 --BREAK: beendet aktuelle Schleife komplett und führt weiteres Skript aus
 
---CONTINE: "springt" zum Anfang der aktuelle Schleife; Wenn Continue ausgeführt wird,
+--CONTINUE: "springt" zum Anfang der aktuelle Schleife; Wenn Continue ausgeführt wird,
 --wird der Rest des Codes innerhalb der Schleife ignoriert 
 
 DECLARE @Counter int = 1
@@ -84,7 +84,7 @@ SELECT Country, CategoryName, Summe FROM #t1 WHERE rank = 1
 
 --CTE mit Window Function:
 ;with q as(
-SELECT c.Country, CategoryName , SUM(Freight) GesamtUmsatz
+SELECT c.Country, [CategoryName] , SUM(Freight) GesamtUmsatz
 FROM Customers c
 JOIN Orders o ON c.CustomerID = o.CustomerID
 JOIN [Order Details] od ON od.OrderID = o.OrderID
@@ -159,4 +159,3 @@ GROUP BY c.Country, CategoryName
 ORDER BY Country, GesamtUmsatz DESC
 
 --WHERE ID = %8
-

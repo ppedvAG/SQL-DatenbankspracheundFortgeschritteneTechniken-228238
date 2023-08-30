@@ -30,23 +30,44 @@ Tag 2:
 - Views (partitionierte/updateable Views)
 - Parallelism
 - Subqueries & #Tables
+- Programmsteuerung mit WHILE, IF, BREAK, CONTINUE 
 
-- Windowfunctions/Ranking Functions
 
+Tag 3:
+- Partitionierung, Data Compression
 - Trigger 101, Database & Tables
+- INTERSECT/EXCEPT
+- SP 2.0 OUTPUT, RETURN, Dynamic Sql
+- Graph Tables: n:m Beziehungen usw. + Geography + Methoden
+- WAITFOR
 
-- Partitionierung, Data Compression, 
+- (Windowfunctions/Ranking Functions) (LAG)
+- (CTEs recursive)
+- (Semantiksuche/Volltextsuche)
+- (MERGE)
 
-- Graph Tables: n:m Beziehungen usw.
-- Geography + Methoden
+Tuning Step by Step:
+sp_Blitz
+Abfrageplan grob prüfen (v.a Actual vs. Estimated Rows) + (Seeks vs. Scans)
+Parallelism? Wenn an, mal ohne prüfen (oder weniger MAXDOP); Wenn nicht an, Parallelism forcen
+Lookups? Lösbar über neuen NCIX?
+Indexes checken --> neue Indizes sinnvoll?
+Neue Spalten in bestehenden Index aufnehmen? Je kleiner/je ähnlicher desto "ungefährlicher"
 
-- CTEs
+Abwägen, weiteres Tuning sinnvoll?
 
-- Programmsteuerung
-WHILE, IF, BREAK, CONTINUE, WAITFOR
+Fragmentierung bestehender Indexes prüfen --> evtl. Reorganize oder sogar rebuild
+Statistics updaten? Sample Size erhöhen bzw. Fullscan forcen
 
-(- Tuning; open source Procedures)
+Query selber prüfen:
+Subqueries eher vermeiden wenn möglich
+#Tables einbauen
 
+Empfehlung: Brent Ozar (Lets fix this Query)
+
+Mailadresse Nico:
+
+nicolass@ppedv.de
 
 
 */

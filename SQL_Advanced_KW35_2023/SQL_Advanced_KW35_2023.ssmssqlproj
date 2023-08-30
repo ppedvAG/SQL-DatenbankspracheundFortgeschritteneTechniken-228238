@@ -85,6 +85,36 @@
           <AssociatedConnUserName />
           <FullPath>10_Parallelism.sql</FullPath>
         </FileNode>
+        <FileNode Name="11_Partitionierung.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:NS2-WIN10-2\SQLSPIELPLATZ:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>NS2-WIN10-2\SQLSPIELPLATZ</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>11_Partitionierung.sql</FullPath>
+        </FileNode>
+        <FileNode Name="12_DataCompression.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:NS2-WIN10-2\SQLSPIELPLATZ:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>NS2-WIN10-2\SQLSPIELPLATZ</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>12_DataCompression.sql</FullPath>
+        </FileNode>
+        <FileNode Name="13_StoredProcedures2.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:NS2-WIN10-2\SQLSPIELPLATZ:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>NS2-WIN10-2\SQLSPIELPLATZ</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>13_StoredProcedures2.sql</FullPath>
+        </FileNode>
+        <FileNode Name="14_Trigger.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:NS2-WIN10-2\SQLSPIELPLATZ:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>NS2-WIN10-2\SQLSPIELPLATZ</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>14_Trigger.sql</FullPath>
+        </FileNode>
+        <FileNode Name="15_GraphTables.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:NS2-WIN10-2\SQLSPIELPLATZ:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>NS2-WIN10-2\SQLSPIELPLATZ</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>15_GraphTables.sql</FullPath>
+        </FileNode>
       </Items>
     </LogicalFolder>
     <LogicalFolder Name="Sonstiges" Type="3" Sorted="true">
